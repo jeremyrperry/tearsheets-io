@@ -1,4 +1,39 @@
 /* Begin Generic Styles */
 
+#container-main {
+    padding-top:81px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.container-widthpadding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
 
 /* End Generic Styles */
+/* Begin Navbar Styles */
+
+.navbar-default {
+  background-color: white;
+  border-color: white;  
+  margin-top:10px;
+}
+
+/* End Navbar Styles */
+/* Begin Sign In Styles */
+
+.ctct-custom-form input[type="password"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #b0b6bb;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-family: Helvetica Neue, Arial, sans-serif;
+    color: #394856;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* End Sign In Styles */
