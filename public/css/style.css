@@ -22,6 +22,13 @@
 
 
 /* End Home Styles */
+/* Begin Get Started Styles */
+
+.dragdrop {
+  height:400px;
+  border: black solid .5px;
+}
+/* End Get Started Styles*/
 /* Begin Navbar Styles */
 
 .navbar-default {
