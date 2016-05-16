@@ -20,6 +20,12 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('/get-started', function(req, res) {
+  res.render('getstarted', {
+    isGetStartedPage: true
+  });
+});
+
 app.listen(3030, function () {
   console.log('server up on port 3030...');
 });

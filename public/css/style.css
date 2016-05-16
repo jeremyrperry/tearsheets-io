@@ -12,7 +12,16 @@
   position: relative;
 }
 
+.form-horizontal > .form-group {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 /* End Generic Styles */
+/* Start Home Styles */
+
+
+/* End Home Styles */
 /* Begin Navbar Styles */
 
 .navbar-default {
@@ -21,6 +30,9 @@
   margin-top:10px;
 }
 
+.navbar-nav .text-right {
+  padding-right:0px;
+}
 /* End Navbar Styles */
 /* Begin Sign In Styles */
 
