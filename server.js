@@ -26,6 +26,12 @@ app.get('/get-started', function(req, res) {
   });
 });
 
+app.get('/signed-in', function(req, res) {
+  res.render('signedin', {
+    isGetStartedPage: true
+  });
+});
+
 app.listen(3030, function () {
   console.log('server up on port 3030...');
 });
