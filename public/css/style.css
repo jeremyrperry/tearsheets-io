@@ -24,7 +24,6 @@
 /* End Generic Styles */
 /* Start Home Styles */
 
-
 /* End Home Styles */
 /* Begin Get Started Styles */
 
@@ -44,6 +43,13 @@
 .navbar-nav .text-right {
   padding-right:0px;
 }
+
+.nav>li>a{
+  color:black;
+  display:inline-block;
+  padding: 8px 8px;
+}
+
 /* End Navbar Styles */
 /* Begin Sign In Styles */
 

@@ -34,7 +34,7 @@
                 </div>
                 <p class="col-sm-12 text-center">or</p>
                 <div class="form-group">
-                    <input class="btn btn-default col-sm-12" type="sumbit" value="Sign up for free with Google">
+                    <div data-width="330" data-height="30" id="my-signin2"></div>
                 </div>
             </form>
         </div>
@@ -54,3 +54,22 @@
         </div>
     </div>
 </div>
+<script>
+    function onSuccess(googleUser) {
+    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+    console.log(error);
+    }
+    function renderButton() {
+    gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 330,
+        'height': 35,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+    });
+    }
+</script>
