@@ -26,12 +26,6 @@ app.get('/get-started', function(req, res) {
   });
 });
 
-app.get('/signed-in', function(req, res) {
-  res.render('signedin', {
-    isGetStartedPage: true
-  });
-});
-
 app.get('/profile', function(req, res) {
   res.render('profile', {
     isGetStartedPage: true

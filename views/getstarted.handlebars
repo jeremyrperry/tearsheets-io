@@ -1,31 +1,46 @@
-<div class="container-fluid">
-    <div class="container">
+<div class="container">
+    <div class="container-fluid">
         <h2 class="text-center">1. Files</h2>
-        <button class="btn btn-default">Download a sample file</button>
-        <div class="dragdrop hidden-xs col-sm-12">
-            <p>Drag and Drop your tearsheets here or click to open from your desktop</p>
+        <button type="button" class="btn btn-default">Download a sample file</button>
+        <div class="upload loading completed container dragdrop hidden-xs col-sm-12">
+            <p class="text-center col-sm-push-4 col-sm-4">Drag and Drop your tearsheets here or click to open from your desktop</p>
+            <div class="container">
+                <div class="dragdrop-words col-sm-push-3 col-sm-3">
+                    <h2>Firm Information</h2>
+                    <h2>Benchmarks</h2>
+                    <h2>Disclosures</h2>
+                </div>
+                <div class="dragdrop-words col-sm-push-3 col-sm-3">
+                    <h2>Returns</h2>
+                    <h2>Bios</h2>
+                    <h2>Disclosures</h2>
+                </div>
+            </div>
+            <div class="loading col-sm-12 text-right">
+                <button type="button" class="text-right btn btn-default">Start Over</button>
+            </div>
         </div>
     </div>
-    <div class="container">
-            <div class="row">
+    <div class="container-fluid">
+            <div class="row signed-in-not-pro">
                 <div class="col-xs-12 col-sm-4">
                     <button class="btn btn-default col-xs-12">Free</button>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                     Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                     </p>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <button class="btn btn-default col-xs-12">Basic</button>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                     Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                     </p>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <button class="btn btn-default col-xs-12">Professional</button>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                     Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                     </p>
                 </div>
@@ -47,7 +62,8 @@
                     <img src="http://d26uhratvi024l.cloudfront.net/gsc/4CTG6V/29/4f/f5/294ff59c38794ab0b18de932927396d8/images/signed_in/u56.png?token=d75d0f177731f146bbdb0dbf08938b68">
                 </div>
             </div>
-        <div class="not-logged-on-basic col-sm-push-2 col-xs-12 col-sm-4">
+            <a href="#" class="signed-in-not-pro text-center col-xs-12">Get a custom layout!</a>
+        <div class="not-signed-in-basic col-sm-push-2 col-xs-12 col-sm-4">
             <form class="form-horizontal">
                 <div class="form-group">
                     <input class="form-control" type="select" name="country" placeholder="Country">
@@ -77,23 +93,9 @@
                         <input class="form-control" type="text" name="expirationdate" placeholder="Expiration Date">
                     </div>
                 </div>
-                <div class="form-group">
-                    <div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" name="termsAndConditions"><a href="#">I agree to the Tearsheets.io terms and conditions</a>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input class="btn btn-default col-xs-6" type="submit" value="Sign up for free">
-                    <div data-width="150" data-height="30" id="my-signin2"></div>
-                    <a href="#signInModal">or Sign In</a>
-                </div>
             </form>
         </div>
-        <div class="not-logged-in-free col-sm-push-2 col-xs-12 col-sm-4">
+        <div class="not-signed-in-free col-sm-push-2 col-xs-12 col-sm-4">
             <form class="form-horizontal">
                 <div class="form-group">
                     <input class="form-control" type="text" name="fullname" placeholder="Full Name">
@@ -123,8 +125,8 @@
             </form>
         </div>
     </div>
-    <div class="container">
-        <h2 class="text-center">3. Profit $$</h2>
+    <div class="container-fluid text-center">
+        <h2>3. Profit $$</h2>
         <button class="btn btn-default">Preview</button>
     </div>
 </div>
