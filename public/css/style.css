@@ -1,3 +1,64 @@
+/* Begin Bootstrap Overides */
+
+.btn-default, 
+button, 
+.btn {
+  color:#29c0a0;
+  border-color: #29c0a0;
+}
+
+button:hover, 
+btn:hover,
+.btn-default:hover {
+  color:#098d71;
+  border-color: #098d71;
+  background-color:transparent;
+}
+
+.btn-default:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus,
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus {
+  color:#098d71;
+  outline: thin dotted;
+  box-shadow: 0 0 5px rgba(41, 192, 160, 1);
+  border: 1px solid rgba(41, 192, 160, 1);
+  outline-offset: -2px;
+  background-color: transparent;
+  border-color: #098d71;
+}
+
+.btn-default:active {
+  color:#098d71;
+  background-color:#cdede6;
+  box-shadow: 0 0 5px rgba(41, 192, 160, 1);
+  border: 1px solid rgba(41, 192, 160, 1);
+  outline-offset: -2px;
+}
+
+.btn-submit {
+  color:#ffffff;
+  background-color:#29c0a0;
+  border-color:#29c0a0;
+}
+
+.btn-submit:hover {
+  color:#ffffff;
+  background-color:#75cdbc;
+  border-color:#75cdbc;
+}
+
+.
+/* End Bootstrap Overides */
 /* Begin Generic Styles */
 
 #container-main {
@@ -35,6 +96,8 @@
 .dragdrop-words > h2 {
   padding:16% 0%;
 }
+
+
 /* End Get Started Styles*/
 /* Begin Navbar Styles */
 
@@ -54,15 +117,6 @@
   padding: 8px 8px;
 }
 
-.signed-in {
-  display:none;
-}
-
-not-signed-in {
-  display:none;
-}
-
-.uploading 
 /* End Navbar Styles */
 /* Begin Sign In Styles */
 

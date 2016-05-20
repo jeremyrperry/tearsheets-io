@@ -3,13 +3,13 @@
       <ul class="nav navbar-nav col-xs-12">
         <li class="{{#isGetStartedPage}}active{{/isGetStartedPage}} col-xs-4"><a href="/get-started" class="btn btn-default navbar-btn">Create a Tearsheet</a></li>
         <li class="col-xs-4 text-center"><h1>Tearsheets.io</h1></li>
-        <li class="col-xs-4 text-right"><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" href="#signInModal">Sign In</button>
-        <li class="col-xs-4 not-signed-in text-right">
+        <li class="col-xs-4 not-signed-in text-right"><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" href="#signInModal">Sign In</button>
+        <li class="col-xs-4 signed-in text-right">
           <div class="signed-in dropdown">
             <button class="btn btn-default navbar-btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Example Name
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <a class="dropdown-item" href="{{#isProfilePage}}active{{/isProfilePage}}">Edit Profile</a>
+              <a class="{{#isProfilePage}}active{{/isProfilePage}} dropdown-item" href="/profile">Edit Profile</a>
               <a class="dropdown-item" href="#">Sign Out</a>
             </div>
           </div>
@@ -62,5 +62,4 @@
                       localizedErrMap['state_province'] = 'Select a state/province';
                       localizedErrMap['selectcountry'] = 'Select a country';
                       var postURL = 'https://visitor2.constantcontact.com/api/signup';
-
               </script>
